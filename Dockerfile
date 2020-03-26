@@ -17,6 +17,7 @@ RUN apt-get update \
         libicu55 \
         libunwind8 \
         openssh-server \
+        unzip \
         netcat
 
 #Download AzCopy
