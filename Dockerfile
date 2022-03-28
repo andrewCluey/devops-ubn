@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 # To make it easier for build and release pipelines to run apt-get,
 # configure apt to not require confirmation (assume the -y argument by default)
@@ -16,7 +16,7 @@ RUN apt-get update \
         libcurl3 \
         libicu55 \
         libunwind8 \
-        openssh-server \
+        openssh-client \
         unzip \
         netcat
 
