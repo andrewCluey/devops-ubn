@@ -21,17 +21,17 @@ RUN apt-get update \
         netcat
 
 #Download AzCopy
-RUN wget https://aka.ms/downloadazcopy-v10-linux
+#RUN wget https://aka.ms/downloadazcopy-v10-linux
 
 #Expand Archive
-RUN tar -xvf downloadazcopy-v10-linux
+#RUN tar -xvf downloadazcopy-v10-linux
 
 #Move AzCopy to the destination you want to store it
-RUN cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
+#RUN cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
 
-WORKDIR /azp
+#WORKDIR /azp
 
-COPY ./start.sh .
-RUN chmod +x start.sh
+#COPY ./start.sh .
+#RUN chmod +x start.sh
 
-CMD ["./start.sh"]
+#CMD ["./start.sh"]
